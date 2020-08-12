@@ -8,7 +8,7 @@ var box1, pig1,pig3;
 var backgroundImg,platform;
 var bird, slingshot;
 
-var bg ="sprites/bg.png";
+var bg ="bg.png";
 var gameState = "onSling";
 var score=0;
 function preload() {
@@ -103,10 +103,10 @@ async function getbg(){
     var datetime=responseJSON.datetime;
     var hour =datetime.slice(11,13);
 if(hour>=06 && hour<=18){
-    bg="sprites/bg.png";
+    bg="bg.png";
 }
 else{
-bg="sprites/bg2.jpg";
+bg="bg2.jpg";
 }
 backgroundImg=loadImage(bg);
 
